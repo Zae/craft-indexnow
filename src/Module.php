@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace IndexNow;
+namespace Zae\IndexNow;
 
 use Closure;
 use Craft;
@@ -11,9 +11,9 @@ use craft\elements\Entry;
 use craft\events\ModelEvent;
 use craft\helpers\ElementHelper;
 use craft\helpers\Queue;
-use IndexNow\Jobs\PingJob;
 use yii\base\Event;
 use yii\base\Module as BaseModule;
+use Zae\IndexNow\Jobs\PingJob;
 
 class Module extends BaseModule
 {
