@@ -8,7 +8,6 @@ use Closure;
 use Craft;
 use craft\base\Element;
 use craft\elements\Entry;
-use craft\events\ModelEvent;
 use craft\helpers\ElementHelper;
 use craft\helpers\Queue;
 use yii\base\Event;
@@ -41,10 +40,10 @@ class Module extends BaseModule
     }
 
     /**
-     * @param ModelEvent $e
+     * @param Event $e
      * @return void
      */
-    private function handleUpdate(ModelEvent $e): void
+    private function handleUpdate(Event $e): void
     {
         /* @var Entry $entry */
         $entry = $e->sender;
